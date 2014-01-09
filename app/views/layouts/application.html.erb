@@ -7,6 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!--Navigation -->
+
 	<div class="navbar  navbar-inverse navbar-fixed-top">
   		<div class="navbar-inner">
   			<div class="container">
@@ -20,7 +22,12 @@
 		</div>
 	</div>
 
+  <!--Yield -->
 <div class="container">
+          <!--Flash messages -->
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
 <%= yield %>
 </div>
 
